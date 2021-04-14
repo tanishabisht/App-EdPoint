@@ -1,0 +1,8 @@
+.App {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.myProfileWrapper {    
+  background-image: url(./Images/bgLight.png);
+}
