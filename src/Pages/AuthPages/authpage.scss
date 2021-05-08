@@ -1,0 +1,80 @@
+.loginBox {
+    height: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginLink {
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.SIGNINUPWrapper {    
+  background-image: url(../../Images/bgSignInUp.png);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.signInBtn {
+    margin-top: 30%;
+    padding-left: 250px;
+}
+
+.signUpBtn {
+    margin-top: 30%;
+    padding-right: 250px;
+}
+
+
+
+
+
+
+// SIGN UP PAGE
+.signup_wrapper {
+    margin-top: 20%;
+    margin-bottom: 14%;
+}
+
+
+
+
+
+
+// SIGN IN PAGE
+// .signup_wrapper {
+//     margin-top: 20%;
+//     margin-bottom: 14%;
+// }
+
+
+
+
+
+
+// COMMON
+
+.login_label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.login_input_wrapper {
+    background-image: url(../../Images/inputBox.svg);
+    width: 317px;
+    height: 40px;
+    padding: 10px;
+}
+
+.login_input {
+    border: 0px;
+    width: 290px;
+    background-color: transparent;
+    &:focus{
+        outline: none;
+    }
+}
