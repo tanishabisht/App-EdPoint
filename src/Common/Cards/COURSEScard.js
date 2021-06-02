@@ -3,7 +3,7 @@ import {CardOut, CourseCardIn} from '../index'
 
 
 
-const COURSEScard = ({title, topics, borderColor, bgColor, username, inDesc, inBorderColor, inBgColor, inTextColor}) => {
+const COURSEScard = ({title, topics, borderColor, bgColor, username, email, inDesc, inBorderColor, inBgColor, inTextColor}) => {
 
     const [toggle, setToggle] = useState(true)
 
@@ -15,7 +15,7 @@ const COURSEScard = ({title, topics, borderColor, bgColor, username, inDesc, inB
         <>
             {toggle ? 
                 <CardOut title={title} topics={topics} borderColor={borderColor} bgColor={bgColor} onClick={onClickCard} /> : 
-                <CourseCardIn username={username} desc={inDesc} borderColor={inBorderColor} bgColor={inBgColor} textColor={inTextColor} onClick={onClickCard} />
+                <CourseCardIn username={username} email={email} desc={inDesc} borderColor={inBorderColor} bgColor={inBgColor} textColor={inTextColor} onClick={onClickCard} />
             }
         </>
     )

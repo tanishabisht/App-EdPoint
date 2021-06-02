@@ -17,7 +17,7 @@ const SideNavWrapper = styled.div`
   padding-top: 20px;
 `
 
-const SideNav = () => {
+const SideNav = props => {
   return (
       <SideNavWrapper>
       <div className='container-fluid'>
@@ -28,7 +28,7 @@ const SideNav = () => {
         <div className='container'>
           <div className='userinfo' style={{textAlign:'center', display:'inline-block'}}>
             <img src={avatar} alt='avatar' />
-            <h6>Tanisha Bisht</h6>
+            <h6>{props.name}</h6>
           </div>
           <div className='navs mt-5'>
             <NavLink activeClassName='secLinkActive' className='secLink' to="/profile"><h5>My Profile</h5></NavLink>

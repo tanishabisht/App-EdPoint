@@ -1,36 +1,32 @@
-import {CustomButton} from '../../Common'
-import SIGNUp from '../../Images/SIGNUp.svg'
-import {NavLink} from 'react-router-dom'
 import './authpage.scss'
+import {useState} from 'react'
+import {auth} from '../../Config/firebaseConfig'
 
 
 
-
-const SignUp = () => {
+function SignUp() {
         
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const signUp = ()=> {
+      auth.createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          console.log(userCredential)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    }
+
 
     return (
-        <div className='container-fluid SIGNINUPWrapper'>
-            <img src={SIGNUp} alt='main' className='loginBox' />
-            <div className='row' style={{height:'100vh'}}>
-                <div className='col'></div>
-                <div className='col signup_wrapper'>
-                    <label className='login_label' for="username">Email Id:</label>
-                    <div className='login_input_wrapper'>
-                        <input type="text" className='login_input' name="username"/>
-                    </div><br/>
-                    <label className='login_label' for="username">Password:</label>
-                    <div className='login_input_wrapper'>
-                        <input type="text" className='login_input' name="username"/>
-                    </div><br/>
-                    <NavLink className='loginLink' to="/signin">
-                        <CustomButton borderColor='#f17a7e' bgColor='#f17a7e' textColor='#fff'>SIGN UP</CustomButton>
-                    </NavLink>
-                </div>
-                <div className='col'></div>
-                <div className='col'></div>
-            </div>
-        </div>
+      <div className="signUp">
+        <h1>Register your account</h1>
+        <input type='text' placeholder='Enter your email' onChange={e => setEmail(e.currentTarget.value)}/>
+        <input type='password' placeholder='Enter your password' onChange={e => setPassword(e.currentTarget.value)}/>
+        <button onClick={signUp}>Sign Up</button>
+      </div>
     )
 }
 

@@ -2,7 +2,7 @@ import PinkCard from '../../Images/pinkCustom.svg'
 import {CardWrapper, Card} from './card.elements'
 
 
-const CourseCardIn = ({username, desc, borderColor, bgColor, textColor, onClick}) => {
+const CourseCardIn = ({username, email, desc, borderColor, bgColor, textColor, onClick}) => {
   return (
     <CardWrapper color={borderColor} onClick={onClick}>
         <Card color={bgColor} textColor={textColor}>
@@ -10,7 +10,7 @@ const CourseCardIn = ({username, desc, borderColor, bgColor, textColor, onClick}
                 <div className='row'>
                     <div className='col-2 my-auto'>
                         <img src={PinkCard} style={{'max-width':'100%'}}/>
-                        {username}
+                        {username} <br/> {email}
                     </div>
                     <div className='col-9 my-auto'>
                         <p>{desc}</p>
