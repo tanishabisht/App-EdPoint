@@ -10,7 +10,6 @@ function CourseForm() {
     const [desc, setDesc] = useState('')
 
     const [uid, setUid] = useState('')
-    const [userInfo, setUserInfo] = useState({})
 
 
     useEffect(() => {

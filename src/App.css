@@ -1,8 +1,27 @@
 .App {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .myProfileWrapper {    
   background-image: url(./Images/bgLight.png);
+  background-attachment: fixed;
 }
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar{width:0.5rem}
+::-webkit-scrollbar-track{background:#562459; border-radius: 50px;}
+::-webkit-scrollbar-thumb{background:#A94399; border-radius: 50px;}
+
+
+.p-15vh {padding-top: 7.5vh; padding-bottom: 7.5vh;}
+.h-screen-90 {height: 85vh;}
+.border-bg {background: #562459;}
+.chat-bg {background: #D9ADD1;}
+.received-message-bg {background: #A94399;}
+.sent-message-bg {background: #D27AC4;}
+.w-80 {width: 80%;}
+.signout-btn {top:10px; right: 10px;}

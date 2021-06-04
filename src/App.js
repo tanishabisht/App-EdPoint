@@ -1,10 +1,7 @@
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
-import { MyProfile, SearchCourse, SignInUp, SignIn, SignUp, InfoForm, CourseForm, SearchComp } from './Pages'
+import { MyProfile, SearchCourse, SignInUp, SignIn, SignUp, InfoForm, CourseForm, SearchComp, ChatBox } from './Pages'
 import { InputModal } from './Components'
 import './App.css'
-import axios from 'axios'
-
-axios.defaults.baseURL = 'https://edpoint-1e713-default-rtdb.firebaseio.com/'
 
 
 
@@ -23,10 +20,11 @@ function App() {
           <Route exact path='/search'><SearchComp/></Route>
           <Route exact path="/profile"><MyProfile/></Route>
           <Route path="/searchcourse"><SearchCourse/></Route>
+          <Route path="/chatbox"><ChatBox/></Route>
         </Switch>
       </div>
     </HashRouter>
-  );
+  )
 }
 
 export default App

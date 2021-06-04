@@ -6,3 +6,5 @@ export { default as SignUp } from './AuthPages/SignUp'
 export { default as InfoForm } from './AuthPages/InfoForm'
 export { default as CourseForm } from './AuthPages/CourseForm'
 export { default as SearchComp } from './AuthPages/SearchComp'
+
+export { default as ChatBox } from './ChatBox/Chatbox'
