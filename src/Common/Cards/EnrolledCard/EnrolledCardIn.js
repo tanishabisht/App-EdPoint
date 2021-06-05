@@ -1,5 +1,5 @@
-import YellowCard from '../../Images/yellowCustom.svg'
-import {CardWrapper, Card} from './card.elements'
+import YellowCard from '../../../Images/yellowCustom.svg'
+import {CardWrapper, Card} from '../card.elements'
 
 
 const EnrolledCardIn = ({email, name, desc, onClick}) => {

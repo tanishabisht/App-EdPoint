@@ -1,5 +1,5 @@
-import PinkCard from '../../Images/pinkCustom.svg'
-import {CardWrapper, Card} from './card.elements'
+import PinkCard from '../../../Images/pinkCustom.svg'
+import {CardWrapper, Card} from '../card.elements'
 
 
 const CourseCardIn = ({desc, onClick}) => {

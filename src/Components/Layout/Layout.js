@@ -11,7 +11,7 @@ const Layout = ({userData, children}) => {
                 <div className='col-3'>
                     <SideNav name={userData.name} />
                 </div>
-                <div className='col-7 p-5' style={{height:'200vh'}}>
+                <div className='col-7 p-5'>
                     <div className='container'>{children}</div>
                 </div>
                 <div className='col-2'>

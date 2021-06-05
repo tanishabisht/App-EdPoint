@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {CardOut, EnrolledCardIn} from '../index'
+import {CardOut, EnrolledCardIn} from '../../index'
 
 
 

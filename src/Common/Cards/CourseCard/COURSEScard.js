@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {CardOut, CourseCardIn} from '../index'
+import {CardOut, CourseCardIn} from '../../index'
 
 
 
