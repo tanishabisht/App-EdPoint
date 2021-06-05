@@ -1,9 +1,9 @@
-import edPointLogo from '../../Images/edPointLogo.svg'
+// import edPointLogo from '../../Images/edPointLogo.svg'
 import edPointText from '../../Images/edPointText.svg'
 import avatar from '../../Images/avatar.svg'
 import styled from 'styled-components'
-import {NavLink} from 'react-router-dom'
-import './sideNav.scss'
+import { NavLink } from 'react-router-dom'
+import classes from './SideNav.module.scss'
 
 
 const SideNavWrapper = styled.div`
@@ -21,18 +21,15 @@ const SideNav = props => {
   return (
       <SideNavWrapper>
       <div className='container-fluid'>
-        <div className='row mb-5'>
-            <div className='col my-auto'><img src={edPointLogo} alt='logo' /></div>
-            <div className='col my-auto'><img src={edPointText} alt='text' /></div>
-        </div>
+        <img src={edPointText} alt='text' />
         <div className='container'>
           <div className='userinfo' style={{textAlign:'center', display:'inline-block'}}>
             <img src={avatar} alt='avatar' />
             <h6>{props.name}</h6>
           </div>
           <div className='navs mt-5'>
-            <NavLink activeClassName='secLinkActive' className='secLink' to="/profile"><h5>My Profile</h5></NavLink>
-            <NavLink activeClassName='secLinkActive' className='secLink' to="/searchcourse"><h5>Search Courses</h5></NavLink>
+            <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/profile"><h5>My Profile</h5></NavLink>
+            <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/searchcourse"><h5>Search Courses</h5></NavLink>
           </div>
         </div>
       </div>

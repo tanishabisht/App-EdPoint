@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { auth, firestore, db } from '../../Config/firebaseConfig'
+import './Chatbox.scss'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -11,7 +12,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore'
 
 
 function ChatMessage(props) {
-    const { user, body, uid, photoURL, createdAt } = props.message;
+    const { user, body, uid, photoURL } = props.message;
 
     const messageClass = uid === auth.currentUser.uid ? 'flex-row-reverse' : 'flex-row';
     const messageBodyClass = uid === auth.currentUser.uid ? 'sent-message-bg text-right' : 'received-message-bg';
@@ -39,9 +40,9 @@ function ChatRoom() {
     const [formValue, setFormValue] = useState('')
     // we will use this to scroll to bottom of chat on page-reload and after sending a message
     const dummy = useRef();
-    const scrollToBottom = () => {
-      dummy.current.scrollIntoView({ behavior: 'smooth' })
-    }
+    // const scrollToBottom = () => {
+    //   dummy.current.scrollIntoView({ behavior: 'smooth' })
+    // }
   
     // getting the message and sorting them by time of creation
     const messagesRef = firestore.collection('messages')

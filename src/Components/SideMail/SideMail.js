@@ -29,11 +29,9 @@ Mail.defaultProps = {
 };
 
 
-const SideMail = ({children}) => {
+const SideMail = () => {
   return (
-      <SideMailWrapper>
-        <Mail/>
-      </SideMailWrapper>
+      <SideMailWrapper/>
   )
 }
 

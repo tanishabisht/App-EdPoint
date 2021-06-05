@@ -1,0 +1,12 @@
+.SecLink {
+    text-decoration: none;
+    color: #707070;
+    &:hover{
+        cursor: pointer;
+        text-decoration: none;
+        color: #3f3f3f;
+    }
+    &.SecLinkActive{
+        color: #f17a7e;
+    }
+}

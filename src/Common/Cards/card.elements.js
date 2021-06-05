@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardWrapper = styled.div`
-    width: fit-content;
+    width: 100%;
     margin: auto;
     clip-path: polygon(20% 0, 97% 0, 100% 15%, 100% 97%, 80% 100%, 3% 100%, 0 85%, 0 3%);
     background: ${({color}) => color || '#f17a7e'};
@@ -18,9 +18,5 @@ export const Card = styled.div`
     color: ${({textColor}) => textColor || '#fff'};
     &:hover{
         cursor: pointer;
-    }
-    &:active{
-        background-color: #000;
-        color: #fff;
     }
 `

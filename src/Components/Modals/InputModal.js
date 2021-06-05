@@ -6,7 +6,7 @@ const InputModal = () => {
   return (
       <div className='center_content'>
             <div className='modal_container'>
-                <img className='modal_avatar' src={Avatar}/>
+                <img className='modal_avatar' src={Avatar} alt='avatar' />
                 <div className='modalfield'>
                     <label className='modal_label' for="course_title">Course Title:</label>
                     <span className='modal_input_wrapper'><input type="text" className='modal_input' name="course_title"/></span>

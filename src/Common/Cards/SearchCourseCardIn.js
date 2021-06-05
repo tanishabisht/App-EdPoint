@@ -9,9 +9,10 @@ const SearchCourseCardIn = ({courseID, title, email, topics, name, username, yea
     const [uid, setUid] = useState('')
     const [creatorID, setCreatorID] = useState('')
     const [userInfomation, setUserInfomation] = useState('')
+   
 
 
-    useEffect(() => {        
+    useEffect(() => {
         auth.onAuthStateChanged(user => {
             if (user){
                 setUid(user.uid)
@@ -41,7 +42,7 @@ const SearchCourseCardIn = ({courseID, title, email, topics, name, username, yea
         
 
 
-    }, [])
+    }, [courseID])
 
 
     const enrolHandler = e => {
@@ -68,11 +69,6 @@ const SearchCourseCardIn = ({courseID, title, email, topics, name, username, yea
         
 
 
-        // .child(courseID).child('studentsEnrolled')
-        // var newPostRef = postListRef.push({...data, studentId:uid})
-        // var postID = newPostRef.key
-
-
 
         console.log(data)
         var EnrollListRef = db.ref('enroll')
@@ -97,7 +93,7 @@ const SearchCourseCardIn = ({courseID, title, email, topics, name, username, yea
                             <p>{desc}</p>
                         </div>
                         <div className='col-2'>
-                                <img src={PinkCard} style={{'max-width':'100%'}}/>
+                                <img src={PinkCard} style={{'max-width':'100%'}} alt='pink_card' />
                                 <button onClick={enrolHandler} style={{border:0, fontSize:'0.8rem'}}>ENROLL</button>
                             {username}
                         </div>

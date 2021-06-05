@@ -1,15 +1,14 @@
-import './userInfo.scss'
+import React from 'react'
 
-const UserInfo = ({name, username, year, desc}) => {
+
+const UserInfo = ({name, email, year, desc}) => {
   return (
-      <div className='container'>        
-        <div className='row' >
-            <h4>{name}</h4>
-            <p>{username}</p>
-            <p>{year}</p>
-            <p>{desc}</p>
-        </div>
-      </div>
+      <React.Fragment>
+        <p><strong>User name: </strong>{name}</p>
+        <p><strong>Email: </strong>{email}</p>
+        <p>Semester {year}</p>
+        <p>{desc}</p>
+      </React.Fragment>
   )
 }
 
