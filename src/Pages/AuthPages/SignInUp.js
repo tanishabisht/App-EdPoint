@@ -1,7 +1,7 @@
 import {CustomButton} from '../../Common'
 import SIGNInUp from '../../Images/SIGNInUp.svg'
 import {NavLink} from 'react-router-dom'
-import './authpage.scss'
+import classes from './authpage.module.scss'
 
 
 
@@ -18,17 +18,17 @@ const SignInUp = () => {
         
 
     return (
-        <div className='container-fluid SIGNINUPWrapper'>
-            <img src={SIGNInUp} alt='main' className='loginBox' />
+        <div className={`container-fluid ${classes.AuthWrapper}`}>
+            <img src={SIGNInUp} alt='main' className={classes.AuthBox} />
             <div className='row' style={{height:'100vh'}}>
                 <div className='col'></div>
-                <div className='col signInBtn'>
-                    <NavLink className='loginLink' to="/signin">
+                <div className={`col ${classes.SignInBtn}`}>
+                    <NavLink className={classes.Link} to="/signin">
                         <CustomButton borderColor='#f9a66c' bgColor='#f9a66c' textColor='#fff' onClick={onSignIn}>SIGN IN</CustomButton>
                     </NavLink>                    
                 </div>
-                <div className='col signUpBtn'>
-                    <NavLink className='loginLink' to="/signup">
+                <div className={`col ${classes.SignUpBtn}`}>
+                    <NavLink className={classes.Link} to="/signup">
                         <CustomButton borderColor='#f17a7e' bgColor='#f17a7e' textColor='#fff' onClick={onSignUp}>SIGN UP</CustomButton>
                     </NavLink>                    
                 </div>

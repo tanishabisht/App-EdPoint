@@ -3,10 +3,7 @@ import { MyProfile, SearchCourse, SignInUp, SignIn, SignUp, InfoForm, AddCourseF
 import './App.css'
 
 
-
-
 function App() {
-  
   return (
     <HashRouter>
       <div className="App">

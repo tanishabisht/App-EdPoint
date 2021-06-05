@@ -3,6 +3,7 @@ import { CardWrapper, Card } from '../card.elements'
 import { useState, useEffect } from 'react'
 import { db, auth } from '../../../Config/firebaseConfig'
 import classes from '../Cards.module.scss'
+import { NavLink } from 'react-router-dom'
 
 
 const SearchCourseCardIn = ({courseID, title, topics, email, name, year, desc, onClick}) => {
@@ -73,7 +74,7 @@ const SearchCourseCardIn = ({courseID, title, topics, email, name, year, desc, o
                     <div className='row'>
                         <div className='col-2 my-auto'>
                             <img src={PinkCard} style={{maxWidth:'100%'}} alt='pink_card' />
-                            <button onClick={enrolHandler} className={classes.EnrollBtn}>ENROLL</button>
+                            <NavLink to='/profile'><button onClick={enrolHandler} className={classes.EnrollBtn}>ENROLL</button></NavLink>
                         </div>
                         <div className='col-10 my-auto'>
                             <h4>Mentor: {name}</h4>

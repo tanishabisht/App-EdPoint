@@ -1,0 +1,49 @@
+.InfoFormWrapper {    
+    background-image: url(../../Images/bgSignInUp.png);
+    height: 100vh;
+    overflow-y: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.Wrapper {
+    height: 85%;
+    width: 70%;
+    background-color: #fff;
+    clip-path: polygon(40% 0, 95% 0, 100% 40%, 100% 95%, 60% 100%, 5% 100%, 0 60%, 0 5%);
+    padding: 7rem;
+}
+
+.Title {
+    color: #f17a7e;
+    margin-bottom: 1rem;
+}
+
+.Input_wrapper {
+    border-bottom: 2px solid #f17a7e;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.Input {
+    border: 0px;
+    width: 100%;
+    background-color: transparent;
+    &:focus{
+        outline: none;
+    }
+}
+
+.SubmitBtn {
+    min-width: 10rem;
+    width: fit-content;
+    margin-top: 9px;
+    border: 3px solid #f17a7e;
+    margin-top: 2rem;
+    color: #f17a7e;
+    border-radius: 3px;
+    padding: 3px 8px;
+    clip-path: polygon(40% 0, 97% 0, 100% 40%, 100% 95%, 60% 100%, 3% 100%, 0 60%, 0 5%);
+}
