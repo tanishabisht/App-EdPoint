@@ -1,8 +1,19 @@
-.p-15vh {padding-top: 7.5vh; padding-bottom: 7.5vh;}
 .h-screen-90 {height: 85vh;}
-.border-bg {background: #562459;}
 .chat-bg {background: #D9ADD1;}
-.received-message-bg {background: #A94399;}
-.sent-message-bg {background: #D27AC4;}
+.received-message-bg {background: #f17a7e;}
+.sent-message-bg {background: #ffccce;}
 .w-80 {width: 80%;}
-.signout-btn {top:10px; right: 10px;}
+
+.initial{
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #f14a4f;
+    color: #fff;
+}
+
+.noScrollBar::-webkit-scrollbar {
+    display: none;
+}

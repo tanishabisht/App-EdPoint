@@ -1,6 +1,5 @@
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
-import { MyProfile, SearchCourse, SignInUp, SignIn, SignUp, InfoForm, CourseForm, ChatBox } from './Pages'
-import { InputModal } from './Components'
+import { MyProfile, SearchCourse, SignInUp, SignIn, SignUp, InfoForm, AddCourseForm, ChatBox } from './Pages'
 import './App.css'
 
 
@@ -21,8 +20,7 @@ function App() {
 
           <Route exact path="/profile"><MyProfile /></Route>
           <Route path="/searchcourse"><SearchCourse /></Route>
-          <Route exact path='/inputmodal'><InputModal/></Route>
-          <Route exact path='/courseform'><CourseForm/></Route>
+          <Route exact path='/courseform'><AddCourseForm/></Route>
           <Route path="/chatbox"><ChatBox/></Route>
 
         </Switch>

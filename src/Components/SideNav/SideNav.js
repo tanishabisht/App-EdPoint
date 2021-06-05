@@ -29,7 +29,7 @@ const SideNav = props => {
           <div className='navs mt-5'>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/profile"><h4 className={classes.MenuItems}>My Profile</h4></NavLink>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/searchcourse"><h4 className={classes.MenuItems}>Search Courses</h4></NavLink>
-            <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/inputmodal"><h4 className={classes.MenuItems}>Add Course</h4></NavLink>
+            <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/courseform"><h4 className={classes.MenuItems}>Add Course</h4></NavLink>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/chatbox"><h4 className={classes.MenuItems}>Discussion Forum</h4></NavLink>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/login"><h4 className={classes.MenuItems}>Logout</h4></NavLink>
           </div>

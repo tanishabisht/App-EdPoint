@@ -1,0 +1,38 @@
+.Center_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Container {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Title {
+    color: #2F3D3F;
+    margin-bottom: 2rem;
+}
+
+.Input_wrapper {
+    background-image: url(../../Images/inputBoxLong.svg);
+    display: inline-block;
+    padding: 10px;
+    width: 557px;
+    height: 45px;
+    margin-bottom: 1rem;
+}
+
+.Input {
+    border: 0px;
+    width: 100%;
+    background-color: transparent;
+    &:focus{
+        outline: none;
+    }
+}
