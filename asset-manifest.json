@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Project-EdPoint/static/css/main.09d4c8a8.chunk.css",
-    "main.js": "/Project-EdPoint/static/js/main.e75b513d.chunk.js",
-    "main.js.map": "/Project-EdPoint/static/js/main.e75b513d.chunk.js.map",
+    "main.js": "/Project-EdPoint/static/js/main.a7d6a9fd.chunk.js",
+    "main.js.map": "/Project-EdPoint/static/js/main.a7d6a9fd.chunk.js.map",
     "runtime-main.js": "/Project-EdPoint/static/js/runtime-main.8be1950e.js",
     "runtime-main.js.map": "/Project-EdPoint/static/js/runtime-main.8be1950e.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/Project-EdPoint/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.d51cfd9b.chunk.js": "/Project-EdPoint/static/js/2.d51cfd9b.chunk.js",
-    "static/js/2.d51cfd9b.chunk.js.map": "/Project-EdPoint/static/js/2.d51cfd9b.chunk.js.map",
+    "static/js/2.cbbf3e74.chunk.js": "/Project-EdPoint/static/js/2.cbbf3e74.chunk.js",
+    "static/js/2.cbbf3e74.chunk.js.map": "/Project-EdPoint/static/js/2.cbbf3e74.chunk.js.map",
     "index.html": "/Project-EdPoint/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/Project-EdPoint/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.09d4c8a8.chunk.css.map": "/Project-EdPoint/static/css/main.09d4c8a8.chunk.css.map",
-    "static/js/2.d51cfd9b.chunk.js.LICENSE.txt": "/Project-EdPoint/static/js/2.d51cfd9b.chunk.js.LICENSE.txt",
+    "static/js/2.cbbf3e74.chunk.js.LICENSE.txt": "/Project-EdPoint/static/js/2.cbbf3e74.chunk.js.LICENSE.txt",
     "static/media/SIGNIn.def2a8b0.svg": "/Project-EdPoint/static/media/SIGNIn.def2a8b0.svg",
     "static/media/SIGNInUp.3ec0e6f5.svg": "/Project-EdPoint/static/media/SIGNInUp.3ec0e6f5.svg",
     "static/media/SIGNUp.b834b518.svg": "/Project-EdPoint/static/media/SIGNUp.b834b518.svg",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.8be1950e.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.d51cfd9b.chunk.js",
+    "static/js/2.cbbf3e74.chunk.js",
     "static/css/main.09d4c8a8.chunk.css",
-    "static/js/main.e75b513d.chunk.js"
+    "static/js/main.a7d6a9fd.chunk.js"
   ]
 }
