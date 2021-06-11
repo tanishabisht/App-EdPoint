@@ -3,6 +3,7 @@ import avatar from '../../Images/avatar.svg'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import classes from './SideNav.module.scss'
+import { auth } from '../../Config/firebaseConfig'
 
 
 const SideNavWrapper = styled.div`
@@ -17,6 +18,13 @@ const SideNavWrapper = styled.div`
 `
 
 const SideNav = props => {
+
+  const logoutHandler = () => {
+    auth.signOut().then(res => {
+      console.log('Sign Out successful', res)
+    }).catch(err => console.log('error: ', err))
+  }
+
   return (
       <SideNavWrapper>
       <div className='container-fluid'>
@@ -31,7 +39,7 @@ const SideNav = props => {
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/searchcourse"><h4 className={classes.MenuItems}>Search Courses</h4></NavLink>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/courseform"><h4 className={classes.MenuItems}>Add Course</h4></NavLink>
             <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/chatbox"><h4 className={classes.MenuItems}>Discussion Forum</h4></NavLink>
-            <NavLink activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/login"><h4 className={classes.MenuItems}>Logout</h4></NavLink>
+            <NavLink onClick={logoutHandler} activeClassName={classes.SecLinkActive} className={classes.SecLink} to="/login"><h4 className={classes.MenuItems}>Logout</h4></NavLink>
           </div>
         </div>
       </div>
